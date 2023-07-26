@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Второй проект</title>
 </head>
 <body>
@@ -10,9 +11,9 @@
         <div class="container">
             <a class="logo">Company</a>
             <div class="header__right">
-                <button class="header__search" aria-label="site search"></button>
+                <button class="header__search btn-reset" aria-label="site search"></button>
                 <nav class="header__nav nav">
-                    <ul class="nav__list">
+                    <ul class="nav__list list-reset">
                         <li class="nav__item">
                             <a href="#" class="nav__link">Portfolio</a>
                         </li>
@@ -48,7 +49,7 @@
         <div class="container">
             <div class="info__top">
                 <div class="info__right">
-                    <ul class="info__list">
+                    <ul class="info__list list-reset">
                         <li class="info__item">
                             <div class="info__completed completed">
                                 <p class="completed__value">20,000</p>
@@ -88,7 +89,7 @@
             <!--/info__top-->
             <div class="info__video">
                 <video src=""></video>
-                <button class="info__play" aria-label="play video"></button>
+                <button class="info__play btn-reset" aria-label="play video"></button>
             </div>
             <!--/info__video-->
         </div>
@@ -97,7 +98,7 @@
     <section class="portfolio">
         <h2 class="visually-hidden">Portfolio</h2>
         <div class="container">
-            <ul class="portfolio__list">
+            <ul class="portfolio__list list-reset">
                 <li class="portfolio-item">
                     <div class="portfolio-item__col">
                         <h3 class="portfolio-item__title">Et&nbsp;odio</h3>
@@ -105,7 +106,7 @@
                             Mauris eget nec nulla dolor&nbsp;ex. Sodales luctus pellentesque cras 
                             ornare lorem luctus lectus sed consectetur quam, est. Libero, odi
                         </p>
-                        <button class=" btn btn--dark btn-reset">Button</button>
+                        <button class="portfolio__btn btn--dark btn-reset">Button</button>
                     </div>
                     <div class="portfolio-item__col">
                         <img src="/img/portfolio-1.jpg" alt="Portfolio photo Et odio" class="portfolio-item__img">
@@ -119,7 +120,7 @@
                             it&nbsp;pulvinar tempus amet dolor dui vulputate tortor, luctus lorem 
                             in&nbsp;nunc eleifend ipsum justo et&nbsp;venenatis dictumst.
                         </p>
-                        <button class=" btn btn--dark btn-reset">Button</button>
+                        <button class="portfolio__btn btn btn--dark btn-reset">Button</button>
                     </div>
                     <div class="portfolio-item__col">
                         <img src="/img/portfolio-2.jpg" alt="Portfolio photo Integer dapibus dictum" class="portfolio-item__img">
@@ -130,7 +131,111 @@
         </div>
     </section>
     <!--/portfolio-->
-
-    
+    <section class="quote">
+        <div class="container">
+            <h2 class="quote__title">Quoute</h2>
+            <blockquote class="quote__content">
+                <p class="quote__text"></p>
+                Accumsan vulputate efficitur in&nbsp;amet, vestibulum ornare morbi accumsan leo, est. 
+                Consectetur ultricies. Sapien est. Dictumst. Sapien habitasse interdum in&nbsp;amet, 
+                lectus molestie vel&nbsp;ut. Malesuada efficitur mattis id&nbsp;mattis aenean interdum 
+                lectus quam, dapibus nec augue vulputate leo, ornare elit.
+            </blockquote>
+            <cite class="quote__author">
+                Alex Lee /<span> Co-founder & SEO</span>
+            </cite>
+        </div>
+    </section>
+    <!--/quote-->
+    <section class="services">
+        <h2 class="visually-hidden">Services</h2>
+        <img src="/img/slider-1.jpg" alt="" class="services__img" aria-hidden="true">
+        <div class="container">
+            <ul class="services__list list-reset">
+                <li class="services__item services-item">
+                    <div class="services-item__col">
+                        <h3 class="services-item__title">Branding</h3>
+                    </div>
+                    <div class="services-item__col">
+                        <p class="services-item__text">
+                            Quam, tortor, interdum consectetur eleifend integer&nbsp;et. 
+                            Accumsan vulputate efficitur in&nbsp;amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.
+                        </p>
+                    </div>
+                </li>
+                <li class="services__item services-item">
+                    <div class="services-item__col">
+                        <h3 class="services-item__title">Web-apps</h3>
+                    </div>
+                    <div class="services-item__col">
+                        <p class="services-item__text">
+                            Malesuada efficitur mattis id&nbsp;mattis aenean interdum lectus quam, dapibus nec augue vulputate leo, 
+                            ornare elit. Pulvinar sed quam, arcu pulvinar nisi ipsum quis, sodales molestie&nbsp;ex.
+                        </p>
+                    </div>
+                </li>
+                <li class="services__item services-item">
+                    <div class="services-item__col">
+                        <h3 class="services-item__title">Design</h3>
+                    </div>
+                    <div class="services-item__col">
+                        <p class="services-item__text">
+                            Cras amet, sed sapien orci, leo, sit ornare risus tortor, ex. Mauris non orci, sed elit. Cursus ex. 
+                            Aenean ipsum dolor augue tempus et&nbsp;molestie ipsum adipiscing leo, sit interdum venenatis odio.
+                        </p>
+                    </div>
+                </li>
+                <li class="services__item services-item">
+                    <div class="services-item__col">
+                        <h3 class="services-item__title">Strategy</h3>
+                    </div>
+                    <div class="services-item__col">
+                        <p class="services-item__text">
+                            Quam, tortor, interdum consectetur eleifend integer&nbsp;et. 
+                            Accumsan vulputate efficitur in&nbsp;amet, vestibulum ornare morbi accumsan leo, est. Consectetur ultricies.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!--/services-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__right">
+                <a class="logo">Company</a>
+                <address class="footer__address">
+                    Dorivit BV, Monitorweg&nbsp;1, Almere 1322BJ, Netherlands
+                </address>
+                <div class="footer__social social">
+                    <ul class="social__items">
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank" aria-label="link to our facebook">
+                                <img src="/img/social-facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank" aria-label="link to our telegram">
+                                <img src="/img/social-telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="social__link" target="_blank" aria-label="link to our google plus">
+                                <img src="/img/social-google-plus.svg" alt="google plus">
+                            </a>
+                        </li>
+                    </ul>             
+                </div>
+            </div>
+            <div class="footer__left">
+                <h2 class="footer__title">Id&nbsp;sodales interdum dui mollis non in&nbsp;odio</h2>
+                <form action="#" class="footer__form">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" name="email" class="footer__input" placeholder="Enter your email" aria-label="Enter your email to subscription">
+                    <button class="footer__btn btn-reset" aria-label="send email"></button>                  
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
