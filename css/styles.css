@@ -30,16 +30,143 @@ body {
 .list-reset{
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
 }
 
 .btn-reset{
-padding: 0;
-bottom: none;
-background-color: transparent;
-cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
 }
-
 /*---------------------------*/
 
+:root {
+    --color-light: #fff;
+    --color-grey: #838383;
+    --color-dark: #1D1D1F;
+}
 
+body {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1230px; 
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 20px 15px;
+    min-width: 180px;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 1.06rem;
+    text-align: center;
+}
+
+.btn--light {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+.btn--dark {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+/*----------header----------*/
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--color-light);
+}
+
+.header__search {
+    width: 24px;
+    height: 24px;
+    margin-right: 35px;
+}
+
+.header__search svg { 
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: right;
+    line-height: 19px;
+    color: var(--color-light);
+}
+/*----------/header----------*/
+
+
+/*----------hero----------*/
+.hero {
+    padding-top: calc(150px + 119px);       /* отступ до хедера + высоата хедера */
+    height: 100vh;
+    min-height: 900px;
+    background-image: url(../img/hero-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    margin: 0 0 30px 0;
+    max-width: 850px;
+    font-weight: 600;
+    line-height: 116px;
+    font-size: 6rem;
+    color: var(--color-light);
+}
+
+.hero__text {
+    margin-bottom: 50px;
+    max-width: 468px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 24px;
+    line-height: 150%;
+    color: var(--color-light);
+}
+/*----------/hero----------*/
+
+/*----------info----------*/
+
+
+
+/*----------/info----------*/
