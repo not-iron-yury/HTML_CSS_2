@@ -39,6 +39,16 @@ body {
     background-color: transparent;
     cursor: pointer;
 }
+
+.sr-only {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
 /*---------------------------*/
 
 :root {
@@ -69,12 +79,25 @@ body {
 .btn--light {
     color: var(--color-dark);
     background-color: var(--color-light);
+    transition: all 0.25s ease;
+}
+
+.btn--light:hover {
+    color: var(--color-light);
+    background-color: var(--color-grey);
 }
 
 .btn--dark {
     color: var(--color-light);
     background-color: var(--color-dark);
+    transition: all 0.25s ease;
 }
+
+.btn--dark:hover {
+    color: var(--color-light);
+    background-color: var(--color-grey);
+}
+
 /*----------header----------*/
 .header {
     position: absolute;
@@ -143,6 +166,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 190px;
 }
 
 .hero__title {
@@ -167,6 +191,89 @@ body {
 
 /*----------info----------*/
 
+.info {
+    color: var(--color-dark);
+}
+.info__container {
+}
 
+.info__top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-bottom: 190px;
+}
 
+.info__item:not(:last-child){
+    margin-bottom: 60px;
+}
+
+.completed__value {
+    font-weight: 300;
+    font-size: 4rem;
+    line-height: 140%;
+}
+
+.completed__desc {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--color-grey);
+}
+
+.info__title {
+    font-weight: 700;
+    font-size: 2.75rem;
+    line-height: 140%;
+    color: var(--color-dark);
+    margin-bottom: 60px;
+}
+
+.info__text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--color-dark);
+}
+
+.info__desc:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.info__video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: 190px;
+}
+
+.info__video video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info__play {
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info__play svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*----------/info----------*/
+
+
+/*----------info----------*/
+
+/*----------/hero----------*/
